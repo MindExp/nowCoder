@@ -4,10 +4,10 @@ package priv.algorithm.coding_interviews;
  * 58.1 翻转字符串
  * 例如：原始字符串“I am a student.”,则翻转后输出“student. a am I”
  */
-public class Question58_1 {
+public class Question_58_1 {
     public static void main(String[] args) {
         String[] testInstances = {"I am a student.", "I. ", " am.", "Wonderful"};
-        Question58_1 question58_1 = new Question58_1();
+        Question_58_1 question58_1 = new Question_58_1();
 
         for (String testInstance : testInstances) {
             String reversedStr = question58_1.reverseString(testInstance);

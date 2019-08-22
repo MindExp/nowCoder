@@ -13,7 +13,7 @@ public class Question_56_1 {
 
         for (int[] testInstance : testInstances) {
             int[] diffOne = new int[1], diffTwo = new int[1];
-            question_56_1.findNumsAppearOanceV3(testInstance, diffOne, diffTwo);
+            question_56_1.findNumsAppearOanceV1(testInstance, diffOne, diffTwo);
             System.out.println(diffOne[0]);
             System.out.println(diffTwo[0]);
         }
@@ -28,6 +28,7 @@ public class Question_56_1 {
      * 5. a xor b xor a = b
      */
 
+    // 时间复杂度：O(N)，空间复杂度 O(1)
     private void findNumsAppearOanceV1(int[] numbers, int[] diffOne, int[] diffTwo) {
         if (numbers == null || numbers.length < 2)
             return;
@@ -36,7 +37,7 @@ public class Question_56_1 {
         for (int index = 0; index < numbers.length; index++)
             xorResult ^= numbers[index];
 
-        int indexOfFirstOneBit = this.getIndexOfFirstOneBit(xorResult);
+        int indexOfFirstOneBit = this.getIndexOfFirstOneBitV2(xorResult);
         int targetOne = 0, targetTwo = 0;
         for (int index = 0; index < numbers.length; index++) {
             if (this.isSameValueOnBit(numbers[index], indexOfFirstOneBit))
@@ -49,7 +50,7 @@ public class Question_56_1 {
     }
 
     /**
-     * 推荐方案
+     * 推荐方案：位运算，时间复杂度：O(N)，空间复杂度 O(1)
      * @param numbers
      * @param diffOne
      * @param diffTwo
@@ -75,7 +76,7 @@ public class Question_56_1 {
         }
     }
 
-    // 未通过牛客
+    // 未通过牛客，时间复杂度 O(N)，空间复杂度 O(N)
     private void findNumsAppearOanceV3(int[] numbers, int[] diffOne, int[] diffTwo) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         if (numbers == null || numbers.length < 2)
@@ -110,11 +111,20 @@ public class Question_56_1 {
      * @param value
      * @return
      */
-    private int getIndexOfFirstOneBit(int value) {
+    private int getIndexOfFirstOneBitV1(int value) {
         int index = 0;
 
         while (((value & 1) == 0) && (index < Integer.SIZE)) {
             value = value >> 1;
+            index++;
+        }
+        return index;
+    }
+
+    private int getIndexOfFirstOneBitV2(int value) {
+        int bitMask = 1, index = 0;
+        while ((value & bitMask) == 0 && index < Integer.SIZE) {
+            bitMask <<= 1;
             index++;
         }
         return index;

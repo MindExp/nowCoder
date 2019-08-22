@@ -9,4 +9,32 @@ public class Question_27 {
 
     }
 
+    private TreeNode mirrorBinarryTree(TreeNode root) {
+        if (root == null)
+            return null;
+
+        this.swapTreeNode(root);
+
+        this.mirrorBinarryTree(root.left);
+        this.mirrorBinarryTree(root.right);
+
+        return root;
+    }
+
+    private void swapTreeNode(TreeNode pNode) {
+        TreeNode tempNode;
+        tempNode = pNode.left;
+        pNode.left = pNode.right;
+        pNode.right = tempNode;
+    }
+
+    private class TreeNode {
+        int val;
+        TreeNode left = null;
+        TreeNode right = null;
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
+    }
 }

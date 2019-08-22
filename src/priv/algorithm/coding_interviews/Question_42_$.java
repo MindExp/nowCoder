@@ -16,6 +16,7 @@ public class Question_42_$ {
             System.out.println(question_42$.maxSumOfContinousSubArray(testInstance));
     }
 
+    // 方案一：掌握
     private int maxSumOfContinousSubArray(int[] numbers) {
         int maxSum = Integer.MIN_VALUE, currentSum = 0;
         int length = numbers.length;
@@ -34,7 +35,7 @@ public class Question_42_$ {
     }
 
     // 动态规划求解，待完成
-    private int maxSumOfContinousSubArrayByDynamicPrograming(int[] numbers) {
+    private int maxSumOfContinousSubArrayByDP(int[] numbers) {
 
         return 0;
     }

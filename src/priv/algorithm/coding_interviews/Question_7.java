@@ -17,11 +17,11 @@ public class Question_7 {
         question_7.printBinaryTreeByPreOrder_Stack(root);
         question_7.printBinaryTreeByInOrder(root);
         question_7.printBinaryTreeByInOrder_Stack(root);
-        question_7.printBinaryTreeByEndOrder(root);
-        question_7.printBinaryTreeByEndOrder_Stack(root);
+        question_7.printBinaryTreeByPostOrder(root);
+        question_7.printBinaryTreeByPostOrder_Stack(root);
     }
 
-    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+    private TreeNode reConstructBinaryTree(int [] pre,int [] in) {
         TreeNode root;
 
         if (pre == null || in == null)
@@ -32,11 +32,11 @@ public class Question_7 {
             return null;
         }
 
-        root = this.reConstructBinaryTree_1(pre, 0, pre.length - 1, in, 0, in.length - 1);
+        root = this.reConstructBinaryTreeV1(pre, 0, pre.length - 1, in, 0, in.length - 1);
         return root;
     }
 
-    private TreeNode reConstructBinaryTree_1(int [] pre, int preStart, int preEnd,int [] in, int inStart, int inEnd) {
+    private TreeNode reConstructBinaryTreeV1(int [] pre, int preStart, int preEnd, int [] in, int inStart, int inEnd) {
         // 注意边界条件
         if (preStart > preEnd || inStart > inEnd)
             return null;
@@ -52,15 +52,15 @@ public class Question_7 {
         }
 
         int leftDistance = indexOfRootNodeInInorder - inStart;
-        root.left = this.reConstructBinaryTree_1(pre, preStart + 1, preStart + leftDistance,
+        root.left = this.reConstructBinaryTreeV1(pre, preStart + 1, preStart + leftDistance,
                 in, inStart, indexOfRootNodeInInorder - 1);
-        root.right = this.reConstructBinaryTree_1(pre, preStart + leftDistance + 1, preEnd,
+        root.right = this.reConstructBinaryTreeV1(pre, preStart + leftDistance + 1, preEnd,
                 in, indexOfRootNodeInInorder + 1, inEnd);
 
         return root;
     }
 
-    private TreeNode reConstructBinaryTree_2(int [] pre, int preStart, int preEnd,int [] in, int inStart, int inEnd) {
+    private TreeNode reConstructBinaryTreeV2(int [] pre, int preStart, int preEnd, int [] in, int inStart, int inEnd) {
         TreeNode root = new TreeNode(pre[preStart]);
         // 注意边界条件
         if (preStart == preEnd || inStart == inEnd)
@@ -76,10 +76,10 @@ public class Question_7 {
 
         int leftDistance = indexOfRootNodeInInorder - inStart;
         if (leftDistance > 0 )
-            root.left = this.reConstructBinaryTree_2(pre, preStart + 1, preStart + leftDistance,
+            root.left = this.reConstructBinaryTreeV2(pre, preStart + 1, preStart + leftDistance,
                     in, inStart, indexOfRootNodeInInorder - 1);
         if (indexOfRootNodeInInorder < inEnd)
-            root.right = this.reConstructBinaryTree_2(pre, preStart + leftDistance + 1, preEnd,
+            root.right = this.reConstructBinaryTreeV2(pre, preStart + leftDistance + 1, preEnd,
                     in, indexOfRootNodeInInorder + 1, inEnd);
 
         return root;
@@ -153,10 +153,10 @@ public class Question_7 {
      * 递归后续遍历二叉树
      * @param root
      */
-    private void printBinaryTreeByEndOrder(TreeNode root) {
+    private void printBinaryTreeByPostOrder(TreeNode root) {
         if (root != null){
-            this.printBinaryTreeByEndOrder(root.left);
-            this.printBinaryTreeByEndOrder(root.right);
+            this.printBinaryTreeByPostOrder(root.left);
+            this.printBinaryTreeByPostOrder(root.right);
             System.out.println(root.val);
         }
     }
@@ -165,7 +165,7 @@ public class Question_7 {
      * 非递归后续遍历二叉树
      * @param root
      */
-    private void printBinaryTreeByEndOrder_Stack(TreeNode root) {
+    private void printBinaryTreeByPostOrder_Stack(TreeNode root) {
         Stack<TreeNode> stack = new Stack();
         TreeNode pNode = root;
         TreeNode lastVisitedNode = null;
@@ -191,6 +191,7 @@ public class Question_7 {
             }
         }
     }
+
     private class TreeNode {
         int val;
         TreeNode left = null;

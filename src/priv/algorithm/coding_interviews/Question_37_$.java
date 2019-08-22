@@ -1,15 +1,14 @@
 package priv.algorithm.coding_interviews;
 
-import jdk.nashorn.api.tree.Tree;
-
 /**
  * 37. 序列化二叉树
  * 请实现两个函数，分别用来序列化和反序列化二叉树。
  */
+// 未通过 nowcoder 测试用例
 public class Question_37_$ {
     private StringBuffer serializedStr = new StringBuffer();
     private TreeNode deSerializedRootNode;
-    int index = 0, serializedStrLen;
+    int index = -1, serializedStrLen;
 
     public static void main(String[] args) {
         int[] pre = {6, 5, 4, 7, 2, 3};
@@ -18,6 +17,10 @@ public class Question_37_$ {
         Question_37_$ question_37_$ = new Question_37_$();
         TreeNode rootNode = question_37_$.reConstructBinaryTree(pre, in);
 
+        String serializedStr = question_37_$.serialize(rootNode);
+        System.out.println(serializedStr);
+        rootNode = question_37_$.deSerialize(serializedStr);
+        question_37_$.printBianryTreeByPreOrderRecursion(rootNode);
     }
 
     private String serialize(TreeNode rootNode) {
@@ -46,9 +49,9 @@ public class Question_37_$ {
 
         String[] strArray = str.split(",");
         TreeNode deSerializedRootNode = null;
+        index++;
         if (!strArray[index].equals("#")) {
             deSerializedRootNode = new TreeNode(Integer.valueOf(strArray[index]));
-            index++;
             deSerializedRootNode.left = this.deSerialize(str);
             deSerializedRootNode.right = this.deSerialize(str);
         }
@@ -103,5 +106,13 @@ public class Question_37_$ {
                 in, indexOfRootNodeInInorder + 1, inEnd);
 
         return root;
+    }
+
+    private void printBianryTreeByPreOrderRecursion(TreeNode rootNode) {
+        if (rootNode == null)
+            return;
+        System.out.println(rootNode.val);
+        this.printBianryTreeByPreOrderRecursion(rootNode.left);
+        this.printBianryTreeByPreOrderRecursion(rootNode.right);
     }
 }

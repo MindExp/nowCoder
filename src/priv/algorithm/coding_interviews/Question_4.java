@@ -6,15 +6,15 @@ package priv.algorithm.coding_interviews;
  *
  * 测试用例：{{1,   4,  7, 11, 15},{2,   5,  8, 12, 19},{3,   6,  9, 16, 22},{10, 13, 14, 17, 24},{18, 21, 23, 26, 30}}
  */
-public class Questoin_4 {
+public class Question_4 {
     public static void main(String[] args) {
         int[][] testInstance = {{1,   4,  7, 11, 15},{2,   5,  8, 12, 19},{3,   6,  9, 16, 22},{10, 13, 14, 17, 24},{18, 21, 23, 26, 30}};
 
-        Questoin_4 questoin_4 = new Questoin_4();
+        Question_4 question_4 = new Question_4();
         boolean found = false;
-        found = questoin_4.findElementIn2DimensionalMatrix(testInstance, 5);
+        found = question_4.findElementIn2DimensionalMatrix(testInstance, 5);
         System.out.println(found);
-        found = questoin_4.findElementIn2DimensionalMatrix(testInstance, 20);
+        found = question_4.findElementIn2DimensionalMatrix(testInstance, 20);
         System.out.println(found);
     }
 
