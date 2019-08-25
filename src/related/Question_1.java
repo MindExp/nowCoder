@@ -12,9 +12,9 @@ public class Question_1 {
         if (index == str.length)
             return ' ';
 
-        System.out.println(str[index] + this.printAllSubString(str, ++index));
+        System.out.println(str[index] + this.printAllSubString(str, index + 1));
 
-        System.out.println(this.printAllSubString(str, ++index));
+        System.out.println(this.printAllSubString(str, index + 1));
         return ' ';
     }
 
