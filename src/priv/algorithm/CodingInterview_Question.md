@@ -1,6 +1,6 @@
 #### 3. 数组中重复的数字
 在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。
-* [55_1](./coding_interviews/Question_3.java)
+* [3](./coding_interviews/Question_3.java)
 * [nowcoder](https://www.nowcoder.com/practice/623a5ac0ea5b4e5f95552655361ae0a8?tpId=13&tqId=11203&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 4. 二维数组中的查找
@@ -15,22 +15,22 @@
 
 #### 6. 从尾到头打印链表
 
-* [](./coding_interviews/Question_6.java)
+* [6](./coding_interviews/Question_6.java)
 * [nowcoder](https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035?tpId=13&tqId=11156&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 7. 重建二叉树
 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
-* [](./coding_interviews/Question_7.java)
+* [7](./coding_interviews/Question_7.java)
 * [nowcoder](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=13&tqId=11157&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 8. 二叉树的下一个结点
 给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。
-* [](./coding_interviews/Question_8.java)
+* [8](./coding_interviews/Question_8.java)
 * [nowcoder](https://www.nowcoder.com/practice/9023a0c988684a53960365b889ceaf5e?tpId=13&tqId=11210&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 9. 用两个栈实现队列
 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
-* [](./coding_interviews/Question_9.java)
+* [9](./coding_interviews/Question_9.java)
 * [nowcoder](https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 10_1. 波那契数列
@@ -86,12 +86,9 @@
 #### 17. 打印从 1 到最大的 n 位数
 输入数字 n，按顺序打印出从 1 到最大的 n 位十进制数。比如输入 3，则打印出 1、2、3 一直到最大的 3 位数即 999。
 * [17](./coding_interviews/Question_17.java)
-* [nowcoder]()
 
 #### 18_1. 在 O(1) 时间内删除链表节点
-
 * [18_1](./coding_interviews/Question_18_1.java)
-* [nowcoder]()
 
 #### 18_2. 删除链表中重复的结点
 在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指针。 例如，链表1->2->3->3->4->4->5 处理后为 1->2->5
@@ -100,7 +97,7 @@
 
 #### 19. 正则表达式匹配【待完成】
 请实现一个函数用来匹配包括'.'和'*'的正则表达式。模式中的字符'.'表示任意一个字符，而'*'表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串"aaa"与模式"a.a"和"ab*ac*a"匹配，但是与"aa.a"和"ab*a"均不匹配
-* [](./coding_interviews/Question_19_$.java)
+* [19](./coding_interviews/Question_19_$.java)
 * [nowcoder](https://www.nowcoder.com/practice/45327ae22b7b413ea21df13ee7d6429c?tpId=13&tqId=11205&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 20. 表示数值的字符串
@@ -267,7 +264,6 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天
 #### 48. 最长不含重复字符的子字符串
 输入一个字符串（只包含 a~z 的字符），求其最长不含重复字符的子字符串的长度。例如对于 arabcacfr，最长不含重复字符的子字符串为 acfr，长度为 4。
 * [48](./coding_interviews/Question_48.java)
-* [nowcoder]()
 
 #### 49. 丑数
 把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。
