@@ -2,24 +2,33 @@ package priv.algorithm.DP;
 
 import java.util.Scanner;
 
-/**链接：https://www.nowcoder.com/questionTerminal/3959837097c7413a961a135d7104c314
+/** 链接：https://www.nowcoder.com/questionTerminal/3959837097c7413a961a135d7104c314
  * 字符串之间的距离，编辑距离，将strA编辑成strB所需的最小代价
  * 编辑操作包括插入一个字符、删除一个字符、替换一个字符
  * 分别对应的代价是ic、dc、rc，insert cost、delete cost、replace cost
  */
-public class StrEditDistance {
+public class Question_72 {
     public static void main(String[] args) {
         int insertCost = 3, deleteCost = 2, replaceCost = 1;
-        StrEditDistance strEditDistance = new StrEditDistance();
+        Question_72 question72 = new Question_72();
         Scanner sc = new Scanner(System.in);
 
         while (sc.hasNext()) {
             String str1 = sc.nextLine();
             String str2 = sc.nextLine();
-            System.out.println(strEditDistance.strEditDistance(str1, str2, insertCost, deleteCost, replaceCost));
+            System.out.println(question72.strEditDistance(str1, str2, insertCost, deleteCost, replaceCost));
         }
     }
 
+    /**
+     *
+     * @param str1
+     * @param str2
+     * @param insertCost
+     * @param deleteCost
+     * @param replaceCost
+     * @return
+     */
     private int strEditDistance(String str1, String str2, int insertCost, int deleteCost, int replaceCost) {
         int str1Length = str1.length(), str2Length = str2.length();
         // dp[i][j] 表示将字符串 0~i 编辑为 0~j 的代价

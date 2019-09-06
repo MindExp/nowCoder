@@ -6,7 +6,7 @@ package priv.algorithm.coding_interviews;
  */
 public class Question_46 {
     public static void main(String[] args) {
-        String[] testInstances = {"12258", "122058"};
+        String[] testInstances = {"0", "12258", "122058"};
 
         Question_46 question_46 = new Question_46();
         int result = 0;
@@ -62,7 +62,7 @@ public class Question_46 {
         int preCount = 1, pCount, tempCount;
         int pNumber, preNumber;
 
-        pCount = str.charAt(0) == 0 ? 0 : 1;
+        pCount = str.charAt(0) == '0' ? 0 : 1;
 
         for (int i = 2; i < strLength + 1; i++) {
             tempCount = pCount;

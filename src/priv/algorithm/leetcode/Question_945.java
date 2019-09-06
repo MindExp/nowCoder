@@ -3,6 +3,9 @@ package priv.algorithm.leetcode;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 945. 给定整数数组A，每次 move 操作将会选择任意A[i]，并将其递增1，返回使 A 中的每个值都是唯一的最少操作次数。
+ */
 public class Question_945 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -31,6 +34,7 @@ public class Question_945 {
 
         for (int index = 1; index < arrayLength; index++) {
             if (array[index - 1] >= array[index]) {
+                // array[index] 元素增加次数
                 counter += array[index - 1] - array[index] + 1;
                 array[index] = array[index - 1] + 1;
             }

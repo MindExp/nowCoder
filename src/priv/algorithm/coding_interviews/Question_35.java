@@ -36,12 +36,18 @@ public class Question_35 {
         // 断链
         headNode = head.next;
         pNode = head;
-        while (pNode.next != null) {
-            nextNode = pNode.next;
-            pNode.next = nextNode.next;
-            pNode = nextNode;
-        }
+        qNode = headNode;
+        while (qNode != null) {
+            nextNode = qNode.next;
+            pNode.next = nextNode;
+            pNode = pNode.next;
+            if (nextNode != null) {
+                qNode.next = nextNode.next;
+            } else
+                qNode.next = null;
 
+            qNode = qNode.next;
+        }
         return headNode;
     }
 

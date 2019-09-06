@@ -1,17 +1,18 @@
-package priv.algorithm.coding_interviews;
+package priv.algorithm.leetcode;
 
 import java.util.ArrayList;
 
 /**
- * 29. 顺时针打印矩阵
+ * 54. 螺旋矩阵
+ * 给定一个包含 m x n 个元素的矩阵（m 行, n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
  */
-public class Question_29 {
+public class Question_54 {
     public static void main(String[] args) {
         int[][][] testInstances = {{{1, 2, 3}, {4, 5, 6}}, {{7, 8, 9}}, {{10}, {11}, {12}}};
-        Question_29 question_29 = new Question_29();
+        Question_54 question_54 = new Question_54();
 
         for (int[][] testInstance : testInstances)
-            for (Object item : question_29.printMatrixByClockWise(testInstance).toArray())
+            for (Object item : question_54.printMatrixByClockWise(testInstance).toArray())
                 System.out.println(((Integer)item).intValue());
     }
 
@@ -57,4 +58,10 @@ public class Question_29 {
 
         return resultList;
     }
+    /*
+    java.lang.ArrayIndexOutOfBoundsException: 0
+  at line 7, Solution.spiralOrder
+  at line 54, __DriverSolution__.__helper__
+  at line 79, __Driver__.main
+     */
 }

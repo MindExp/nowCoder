@@ -40,7 +40,7 @@ public class Question_43 {
         return counter;
     }
 
-    // 方案二：掌握，未通过 targetNumber 为 0 的测试用例，时间复杂度 O(N)
+    // 方案二：掌握，未通过 targetNumber 为 0 的测试用例，时间复杂度 O(log(N))
     private int countNumberAppearsInOne2N_A2(int n, int targetNumber) {
         int counter = 0;
         int higherBit, currentBit, remainder = 0;
