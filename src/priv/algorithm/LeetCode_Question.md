@@ -1,4 +1,27 @@
 ### DP 专栏
+#### 53. 最大子序和
+给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+* [53](./DP/Question_53.java)
+* [leetcode](https://leetcode-cn.com/problems/maximum-subarray/)
+
+#### 62. 不同路径
+一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？
+* [62](./DP/Question_62.java)
+* [leetcode](https://leetcode-cn.com/problems/unique-paths/)
+
+#### 63. 不同路径 II
+一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
+机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。
+现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？
+网格中的障碍物和空位置分别用 1 和 0 来表示。
+* [63](./DP/Question_63.java)
+* [leetcode](https://leetcode-cn.com/problems/unique-paths-ii)
+
+#### 64. 矩阵的最小路径和
+给定一个包含非负整数的 m x n 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
+* [64](./DP/Question_64.java)
+* [leetcode](https://leetcode-cn.com/problems/minimum-path-sum/description/)
+
 #### 70. 爬楼梯
 假设你正在爬楼梯，需要 n 阶你才能到达楼顶，每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
 * [70](./DP/Question_70.java)
@@ -21,17 +44,76 @@
 * [213](./DP/Question_213.java)
 * [leetcode](https://leetcode-cn.com/problems/house-robber-ii)
 
+#### 信件错排
+有 N 个 信 和 信封，它们被打乱，求错误装信方式的数量。 
+
+状态转移方程：dp[i] = (i - 1) * dp[i - 2] + (i - 1) * dp[ i - 1]
+
+#### 母牛生产
+假设农场中成熟的母牛每年都会生 1 头小母牛，并且永远不会死。第一年有 1 只小母牛，从第二年开始，母牛开始生小母牛。每只小母牛 3 年之后成熟又可以生小母牛。给定整数 N，求 N 年后牛的数量。
+
+状态转移方程：dp[i] = dp[i - 3] + dp[i - 1]
+
+#### 0-1 背包问题
+
+* [ZeroOnePack_1](./DP/ZeroOnePack_1.java)
+
+####  多重背包问题 与 完全背包问题
+1）多重背包问题：每类物品都有个数限制，第 i 类物品最多可以装 num[i] 次
+
+2）完全背包：每类物品可以无限次装进包内
+* [ZeroOnePack_2](./DP/ZeroOnePack_2.java)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
+
+#### 
+
+* []()
+* [leetcode](./DP/)
 
 ### 回溯 专栏
 #### 51. N皇后
 n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
 * [51](./leetcode/Question_51.java)
 * [leetcode](https://leetcode-cn.com/problems/n-queens-ii/)
-
-#### 62. 不同路径
-一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？
-* [62]()
-* [leetcode](https://leetcode-cn.com/problems/unique-paths/)
 
 
 

@@ -30,7 +30,6 @@ public class Question_213 {
     }
 
     private int robMaxMoney(int[] array, int start, int end) {
-        int resunt,  arrayLength = end - start + 1;
         int preMax = 0, currentMax = 0;
 
         for (int index = start; index <= end; index++) {
