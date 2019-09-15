@@ -16,7 +16,8 @@ public class Question_72 {
         while (sc.hasNext()) {
             String str1 = sc.nextLine();
             String str2 = sc.nextLine();
-            System.out.println(question72.strEditDistance(str1, str2, insertCost, deleteCost, replaceCost));
+            int editDistance = question72.strEditDistance(str1, str2, insertCost, deleteCost, replaceCost);
+            System.out.println(editDistance);
         }
     }
 
@@ -48,7 +49,7 @@ public class Question_72 {
                     // 替换代价：将 str1.charAt(i) 替换为 str2.charAt(j)
                     int rc = dp[i - 1][j - 1] + replaceCost;
                     // 删除代价：将 str1.charAt(i) 删除
-                    int dc = dp[i - 1][j] +deleteCost;
+                    int dc = dp[i - 1][j] + deleteCost;
                     // 插入代价：将 str2.charAt(j) 插入
                     int ic = dp[i][j - 1] + insertCost;
                     dp[i][j] = Math.min(rc, Math.min(dc, ic));

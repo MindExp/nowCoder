@@ -4,6 +4,21 @@
 * [53](./DP/Question_53.java)
 * [leetcode](https://leetcode-cn.com/problems/maximum-subarray/)
 
+#### 77_1. 最长公共子序列
+给定两个字符串，返回长公共子序列长度
+* [77_1](./DP/Question_77_1.java)
+* [lintcode](https://www.lintcode.com/problem/longest-common-subsequence/description)
+
+#### 77_2. 最长公共子串
+给定两个字符串，返回长公共子串长度
+* [77_2](./DP/Question_77_2.java)
+* [lintcode](https://www.lintcode.com/problem/longest-common-substring/description)
+
+#### 5. 最长回文子串
+给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
+* [5](./leetcode/Question_5.java)
+* [leetcode](https://leetcode-cn.com/problems/longest-palindromic-substring/solution/)
+
 #### 62. 不同路径
 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？
 * [62](./DP/Question_62.java)
@@ -160,7 +175,7 @@ n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并
 
 #### 124. 二叉树中的最大路径和
 给定一个非空二叉树，返回其最大路径和。本题中，路径被定义为一条从树中任意节点出发，达到任意节点的序列。该路径至少包含一个节点，且不一定经过根节点。
-* [124]()
+* [124](./leetcode/Question_124.java)
 * [leetcode](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 
 #### 862. 和至少为 K 的最短子数组
@@ -168,20 +183,16 @@ n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并
 * [862]()
 * [leetcode](https://leetcode-cn.com/problems/shortest-subarray-with-sum-at-least-k/)
 
-#### 
+#### 9. 回文数
+判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+* [9](./leetcode/Question_9.java)
+* [leetcode](https://leetcode-cn.com/problems/palindrome-number/)
 
-* []()
-* [leetcode]()
-
-#### 
-
-* []()
-* [leetcode]()
-
-#### 
-
-* []()
-* [leetcode]()
+#### 236. 二叉树的最近公共祖先
+给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
+百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。
+* [236](./leetcode/Question_236.java)
+* [leetcode](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
 #### 
 

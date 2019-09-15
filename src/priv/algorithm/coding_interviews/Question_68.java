@@ -69,6 +69,12 @@ public class Question_68 {
         return pHead.next;
     }
 
+    /**
+     * 寻找两个链表第一个公共结点
+     * @param pNode1
+     * @param pNode2
+     * @return
+     */
     private TreeNode getFirstCommonNodeInList(ListNode pNode1, ListNode pNode2) {
         TreeNode firstCommonNode = null;
         if (pNode1 == null || pNode2 == null)
@@ -82,6 +88,13 @@ public class Question_68 {
         return firstCommonNode;
     }
 
+    /**
+     * 二叉查找树最低公共祖先
+     * @param root
+     * @param pNode1
+     * @param pNode2
+     * @return
+     */
     private TreeNode lowestCommonAncestorInBinarySearchTree(TreeNode root, TreeNode pNode1, TreeNode pNode2) {
         TreeNode lowestAncestorNode = null, pNode = root;
         if (root == null)
@@ -120,6 +133,12 @@ public class Question_68 {
         }
     }
 
+    /**
+     * 依据前序与中序遍历序列，创建二叉树
+     * @param pre
+     * @param in
+     * @return
+     */
     private TreeNode reConstructBinaryTree(int [] pre,int [] in) {
         TreeNode root;
 

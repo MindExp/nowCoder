@@ -396,7 +396,7 @@ LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2
 * [nowcoder](https://www.nowcoder.com/practice/1277c681251b4372bdef344468e4f26e?tpId=13&tqId=11202&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 #### 68_1. 树中两个节点的最低公共祖先
-二叉查找树/普通二叉树
+二叉查找树/普通二叉树 最低公共祖先
 * [68](./coding_interviews/Question_68.java)
 * [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)
 * [leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
