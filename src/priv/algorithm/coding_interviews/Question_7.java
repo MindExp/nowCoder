@@ -106,7 +106,7 @@ public class Question_7 {
         TreeNode pNode = root;
 
         while (pNode != null || !stack.isEmpty()) {
-            if (pNode != null){
+            if (pNode != null) {
                 System.out.println(pNode.val);
                 stack.push(pNode);
                 pNode = pNode.left;
@@ -166,7 +166,7 @@ public class Question_7 {
      * @param root
      */
     private void printBinaryTreeByPostOrder_Stack(TreeNode root) {
-        Stack<TreeNode> stack = new Stack();
+        Stack<TreeNode> stack = new Stack<>();
         TreeNode pNode = root;
         TreeNode lastVisitedNode = null;
 

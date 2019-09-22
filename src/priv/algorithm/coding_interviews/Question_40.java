@@ -1,6 +1,7 @@
 package priv.algorithm.coding_interviews;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Stack;
 
@@ -48,7 +49,19 @@ public class Question_40 {
     private static final int INIT_SIZE_OF_HEAP = 11;
     // 使用 Lambda 函数实现重写 comparator 方法,实现最大堆
     private PriorityQueue<Integer> maxHeap = new PriorityQueue<>(INIT_SIZE_OF_HEAP, (o1, o2) -> o2 - o1);
-
+    /*
+    private PriorityQueue<Integer> maxHeap = new PriorityQueue<>(INIT_SIZE_OF_HEAP, new Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            if (o2 - o1 > 0)
+                return 1;
+            else if (o2 - o1 < 0)
+                return -1;
+            else
+                return 0;
+        }
+    });
+    */
     private ArrayList<Integer> findKthLeastNumbersWithMaxHeap(int[] numbers, int k) {
         ArrayList<Integer> resultList;
 
