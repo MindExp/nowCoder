@@ -22,8 +22,8 @@ public class Question_77_1 {
 
     /**
      * 动态规划求解：
-     * 1）str1.charAt(i) = str2.charAt(i)， dp[i][j] = dp[i - 1][j - 1];
-     * 2）str1.charAt(i) != str2.charAt(i)，dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+     * 1）str1.charAt(i) != str2.charAt(j)， dp[i][j] = dp[i - 1][j - 1];
+     * 2）str1.charAt(i) = str2.charAt(j)，dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
      * @param str1
      * @param str2
      * @return

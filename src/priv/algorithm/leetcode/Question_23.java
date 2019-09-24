@@ -34,7 +34,7 @@ public class Question_23 {
         while (!minHeap.isEmpty()) {
             pNode.next = minHeap.poll();
             pNode = pNode.next;
-
+            // 添加新元素到小顶堆
             if (pNode.next != null)
                 minHeap.add(pNode.next);
         }
@@ -64,6 +64,12 @@ public class Question_23 {
         return this.mergeTwoList(listLeft, listRight);
     }
 
+    /**
+     * 递归归并两个有序链表
+     * @param listOne
+     * @param listTwo
+     * @return
+     */
     private ListNode mergeTwoList(ListNode listOne, ListNode listTwo) {
         if (listOne == null) return listTwo;
         if (listTwo == null) return listOne;

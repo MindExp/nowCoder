@@ -210,6 +210,75 @@ n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并
 * [257](./leetcode/Question_257.java)
 * [leetcode](https://leetcode-cn.com/problems/binary-tree-paths/)
 
+#### 1080. 根到叶路径上的不足节点
+给定一棵二叉树的根 root，请你考虑它所有 从根到叶的路径：从根到任何叶的路径。（所谓一个叶子节点，就是一个没有子节点的节点）
+假如通过节点 node 的每种可能的 “根-叶” 路径上值的总和全都小于给定的 limit，则该节点被称之为「不足节点」，需要被删除。请你删除所有不足节点，并返回生成的二叉树的根。
+* [1080](./leetcode/Question_1080.java)
+* [leetcode](https://leetcode-cn.com/problems/insufficient-nodes-in-root-to-leaf-paths/)
+
+#### 128. 最长连续序列
+给定一个未排序的整数数组，找出最长连续序列的长度。要求算法的时间复杂度为 O(n)。
+输入: [100, 4, 200, 1, 3, 2]
+输出: 4
+解释: 最长连续序列是 [1, 2, 3, 4]。它的长度为 4。
+* [128](./leetcode/Question_128.java)
+* [leetcode](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
+
+#### 1080. 根到叶路径上的不足节点
+给定一棵二叉树的根 root，请你考虑它所有 从根到叶的路径：从根到任何叶的路径。（所谓一个叶子节点，就是一个没有子节点的节点）
+假如通过节点 node 的每种可能的 “根-叶” 路径上值的总和全都小于给定的 limit，则该节点被称之为「不足节点」，需要被删除。
+请你删除所有不足节点，并返回生成的二叉树的根。
+* [1080](./leetcode/Question_1080.java)
+* [leetcode](https://leetcode-cn.com/problems/insufficient-nodes-in-root-to-leaf-paths/)
+
+#### 873. 最长的斐波那契子序列的长度
+如果序列 X_1, X_2, ..., X_n 满足下列条件，就说它是斐波那契式的：
+n >= 3，对于所有 i + 2 <= n，都有 X_i + X_{i+1} = X_{i+2}
+给定一个严格递增的正整数数组形成序列，找到 A 中最长的斐波那契式的子序列的长度。如果一个不存在，返回 0 。
+（回想一下，子序列是从原序列 A 中派生出来的，它从 A 中删掉任意数量的元素（也可以不删），而不改变其余元素的顺序。例如， [3, 5, 8] 是 [3, 4, 5, 6, 7, 8] 的一个子序列）
+* [873](./leetcode/Question_873.java)
+* [leetcode](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/)
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
+#### 
+
+* []()
+* [leetcode]()
+
 #### 
 
 * []()

@@ -102,15 +102,12 @@ public class PrintBinaryTree {
         while (!stack.isEmpty()) {
             pNode = stack.pop();
             // 访问当前结点条件
-            if (pNode.left == null && pNode.right == null || lastVisited == pNode.right) {
+            if (pNode.right == null || pNode.right == lastVisited) {
                 this.printList.add(pNode.val);
                 lastVisited = pNode;
             } else {
-                // FIXME
-                TreeNode leftNode = pNode.left;
-                if (leftNode != null)
-                    stack.push(leftNode);
-
+                // 若当前 pNode 不能被访问则重新入栈
+                stack.push(pNode);
                 pNode = pNode.right;
                 while (pNode != null) {
                     stack.push(pNode);

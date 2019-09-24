@@ -10,8 +10,8 @@ public class Main {
         CreateBinaryTree createBinaryTree = new CreateBinaryTree();
         TreeNode root = createBinaryTree.createBinaryTreeByInOrderAndPostOrder();
 
-        PrintBinaryTree printBinaryTree = new PrintBinaryTree(root);
-        printBinaryTree.printBinaryTreeByPostOrder_Recursion();
-        printBinaryTree.printBinaryTreeByPostOrder_Stack();
+        LeafNodesPath leafNodesPath = new LeafNodesPath();
+        leafNodesPath.getLeafsPath(root);
+        leafNodesPath.printPaths();
     }
 }
